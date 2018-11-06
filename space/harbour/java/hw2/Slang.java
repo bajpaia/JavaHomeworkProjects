@@ -1,13 +1,14 @@
 package space.harbour.java.hw2;
 import java.util.Scanner;
-import java.io.*;
+
 public class Slang 
 {
 	public static String getInput()
 	{
 		System.out.println("Enter the text lol: ");
 		Scanner scanner = new Scanner(System.in);
-		String inputString = scanner.nextLine();		
+		String inputString = scanner.nextLine();	
+		scanner.close();
 		return inputString;
 	}
 	

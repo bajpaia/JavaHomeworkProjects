@@ -1,6 +1,6 @@
 package space.harbour.java.hw2;
 import java.util.Scanner;
-import java.io.*;
+
 class Pascal
 {
 	public static int getInput()
@@ -8,6 +8,7 @@ class Pascal
 		System.out.println("Enter the height of triangle as no of rows: ");
 		Scanner scanner = new Scanner(System.in);
 		String inputString = scanner.nextLine();
+		scanner.close();
 		int num = Integer.parseInt ( inputString );
 		return num;
 	}
